@@ -1,0 +1,262 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+
+    background-color: #fafafa;
+    font-family: 'roboto', Arial, sans-serif;
+    font-size: 17px;
+
+}
+
+.header {
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 70px;
+    -webkit-box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.06);
+    -moz-box-shadow:    0px 6px 24px 0px rgba(0, 0, 0, 0.06);
+    box-shadow:         0px 6px 24px 0px rgba(0, 0, 0, 0.06);
+
+}
+
+.wrapper{
+    width: 100%;
+    overflow: hidden;
+}
+
+.container{
+    max-width: 966px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.flex_conatainer{
+    display: flex;
+}
+
+.header_logo{
+    width: calc(100%/3);
+}
+
+.header_logo img {
+    display: block;
+    margin: 0 auto;
+}
+
+.header_content{
+    padding-top: 50px;
+    margin-bottom: 11px;
+}
+
+.header_title{
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.header_title-text{
+    font-size: 35px;
+    margin-right: 20px;
+    font-family: myriad-pro, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.header_title span{
+    font-size: 15px;
+    color: #4090db;
+    border: 1px solid #4090db;
+    padding: 9px 13px;
+    border-radius: 3px;
+}
+
+.header_text{
+    font-family: myriad-pro, sans-serif;
+    display: flex;
+    margin-bottom: 20px;
+
+}
+
+.header_text-section{
+    margin-right: 30px;
+}
+
+.header_date{
+    display: flex;
+    align-items: center;
+    font-family: myriad-pro, sans-serif;
+}
+
+.header_date-text{
+    margin-right: 15px;
+}
+
+.input_holder{
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 25px;
+    display: flex;
+}
+
+.input_btn{
+    width: 32px;
+    height: 32px;
+    color: #666;
+    background-color: #ebebeb;
+    border: none;
+    border-left: 1px solid #ccc;
+    outline: none;
+    cursor: pointer;
+}
+
+.header_date-input{
+    /* margin-right: 25px; */
+    width: 120px;
+    height: 32px;
+    border: none; /* Убираем рамку */
+    outline: none; /* Убираем свечение в Chrome и Safari */
+    -webkit-appearance: none; /* Убираем рамку в Chrome и Safari */
+    vertical-align: middle; /* Выравнивание по середине */
+    /* border: 1px solid #ccc;
+    border-radius: 5px; */
+    padding-left: 8px;
+}
+
+.upload_holder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* margin-bottom: 15px; */
+    margin: 0 -15px 15px -15px;
+}
+
+.upload_img{
+    position: relative;
+    margin-bottom: 30px;
+    padding: 0 15px;
+}
+
+
+
+.img_box {
+    position: relative;
+    height: 292px;
+}
+   
+.img_box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);  
+    z-index: 1;
+}
+
+.img_box:hover:before {
+    transition: .4s ease-out;
+    opacity: 0;
+  }
+
+.upload_text{
+    position: absolute;
+    top: 170px;
+    left: 35px;
+    color: #fff;
+    width: calc(100% - 50px);
+
+}
+
+.upload_text-section{
+    display: flex;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.upload_text-container{
+    width: calc(100%/3);
+    display: flex;
+    align-items: center;
+}
+
+.upload_text-counter{
+    margin-left: 5px;
+    font-weight: 700;
+}
+
+.upload_data{
+    margin-top: 30px;
+    width: calc(100% - 20px);
+    text-align: center;
+}
+
+.load_more_btn{
+    margin: 0 auto;
+    display: block;
+    background: #ffffff00;
+    width: 126px;
+    height: 30px;
+    margin-bottom: 75px;
+    border-radius: 15px;
+    font-weight: 500;
+    border: 1px solid #000;
+    outline: none;
+    cursor: pointer;
+}
+
+.bold_text{
+    font-weight: 700;
+}
+
+@media(max-width: 1023px){
+    .upload_holder{
+        justify-content: space-around;
+    }
+}
+
+@media(max-width: 767px){
+    .flex_conatainer{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .header_content{
+        padding-top: 5px;
+    }
+
+    .header_title, .header_text, .header_date{
+        flex-wrap: wrap;
+
+    }
+
+    .header_date-text{
+        margin: 0;
+    }
+
+    .input_holder{
+        margin: 0 0 0 10px;
+    }
+
+    .header_text{
+        align-items: center;
+    }
+}
+
+@media(max-width: 500px){
+    .flex_conatainer, .header_title, .header_text, .header_date{
+        flex-direction: column;
+    }
+
+    .header_title-text, .header_text-section, .header_date-text, .input_holder{
+        margin: 0 0 10px 0;
+    }
+
+}

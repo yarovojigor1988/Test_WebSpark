@@ -5,8 +5,307 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <div class="wrapper">
+        <div class="header">
+            <div class="container flex_conatainer">
+                <div class="header_logo">
+                    <img src="img/logo.png" alt="Logo">
+                </div>
+                <div class="header_content">
+                    <div class="header_title">
+                        <div class="header_title-text">monblanproject</div>
+                        <span>Start on 17-02-2016</span>
+                    </div>
+                    <div class="header_text">
+                        <div class="header_text-section">870 posts</div>
+                        <div class="header_text-section"><span class="bold_text">11,787</span> followers</div>
+                        <div class="header_text-section">112 following</div>
+                    </div>
+                    <form class="header_date">
+                        <div class="header_date-text">Date</div>
+                        <div class="input_holder">
+                            <input id="calendar_from" type='text' class="header_date-input datepicker-here" placeholder="from"/>
+                            <button id="calendar_from-close" class="input_btn"><i class="fa fa-times" aria-hidden="true"></i></button>
+                            <button id="calendar_from-open" class="input_btn"><i class="fa fa-calendar" aria-hidden="true"></i></button>
+                        </div> 
+                        <div class="input_holder">
+                            <input id="calendar_to" type='text' class="header_date-input datepicker-here" placeholder="to"/>
+                            <button id="calendar_to-close" class="input_btn"><i class="fa fa-times" aria-hidden="true"></i></button>
+                            <button id="calendar_to-open" class="input_btn"><i class="fa fa-calendar" aria-hidden="true"></i></button>
+                        </div> 
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main">
+            <div class="container">
+                <div class="upload_holder">
+                    <div class="upload_img">
+                        <div class="img_box"><img src="img/img_1.png" alt="uploaded image"></div>
+                        <div class="upload_text">
+                            <div class="upload_text-section">
+                                <div class="upload_text-container">Today</div>
+                                <div class="upload_text-container">
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                    <div class="upload_text-counter">128</div>
+                                </div>
+                                <div class="upload_text-container">
+                                    <img src="img/Comment_16x16.png" alt="comment">
+                                    <div class="upload_text-counter">131</div>
+                                </div>
+                            </div>
+                            <div class="upload_text-section">
+                                <div class="upload_text-container">9-08-2016</div>
+                                <div class="upload_text-container">
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                    <div class="upload_text-counter">67</div>
+                                </div>
+                                <div class="upload_text-container">
+                                    <img src="img/Comment_16x16.png" alt="comment">
+                                    <div class="upload_text-counter">22</div>
+                                </div>
+                            </div>
+                            <div class="upload_data">Image upload: 11-04-2016 </div>
+                        </div>
+                    </div>
+                    <div class="upload_img">
+                        <div class="img_box"><img src="img/img_2.png" alt="uploaded image"></div>
+                        <div class="upload_text">
+                            <div class="upload_text-section">
+                                <div class="upload_text-container">Today</div>
+                                <div class="upload_text-container">
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                    <div class="upload_text-counter">12,800</div>
+                                </div>
+                                <div class="upload_text-container">
+                                    <img src="img/Comment_16x16.png" alt="comment">
+                                    <div class="upload_text-counter">3,100</div>
+                                </div>
+                            </div>
+                            <div class="upload_text-section">
+                                <div class="upload_text-container">9-08-2016</div>
+                                <div class="upload_text-container">
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                    <div class="upload_text-counter">67</div>
+                                </div>
+                                <div class="upload_text-container">
+                                    <img src="img/Comment_16x16.png" alt="comment">
+                                    <div class="upload_text-counter">22</div>
+                                </div>
+                            </div>
+                            <div class="upload_data">Image upload: 11-04-2016 </div>
+                        </div>
+                    </div>
+                    <div class="upload_img">
+                        <div class="img_box"><img src="img/img_3.png" alt="uploaded image"></div>
+                        <div class="upload_text">
+                            <div class="upload_text-section">
+                                <div class="upload_text-container">Today</div>
+                                <div class="upload_text-container">
+                                        <i class="fa fa-play" aria-hidden="true"></i>
+                                    <div class="upload_text-counter">128</div>
+                                </div>
+                                <div class="upload_text-container">
+                                    <img src="img/Comment_16x16.png" alt="comment">
+                                    <div class="upload_text-counter">131</div>
+                                </div>
+                            </div>
+                            <div class="upload_text-section">
+                                <div class="upload_text-container">9-08-2016</div>
+                                <div class="upload_text-container">
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                    <div class="upload_text-counter">67</div>
+                                </div>
+                                <div class="upload_text-container">
+                                    <img src="img/Comment_16x16.png" alt="comment">
+                                    <div class="upload_text-counter">22</div>
+                                </div>
+                            </div>
+                            <div class="upload_data">Image upload: 11-04-2016 </div>
+                        </div>
+                    </div>
+                    <div class="upload_img">
+                        <div class="img_box"><img src="img/img_4.png" alt="uploaded image"></div>
+                        <div class="upload_text">
+                            <div class="upload_text-section">
+                                <div class="upload_text-container">Today</div>
+                                <div class="upload_text-container">
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                    <div class="upload_text-counter">128</div>
+                                </div>
+                                <div class="upload_text-container">
+                                    <img src="img/Comment_16x16.png" alt="comment">
+                                    <div class="upload_text-counter">131</div>
+                                </div>
+                            </div>
+                            <div class="upload_text-section">
+                                <div class="upload_text-container">9-08-2016</div>
+                                <div class="upload_text-container">
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                    <div class="upload_text-counter">67</div>
+                                </div>
+                                <div class="upload_text-container">
+                                    <img src="img/Comment_16x16.png" alt="comment">
+                                    <div class="upload_text-counter">22</div>
+                                </div>
+                            </div>
+                            <div class="upload_data">Image upload: 11-04-2016 </div>
+                        </div>
+                    </div>
+                    <div class="upload_img">
+                        <div class="img_box"><img src="img/img_5.png" alt="uploaded image"></div>
+                        <div class="upload_text">
+                            <div class="upload_text-section">
+                                <div class="upload_text-container">Today</div>
+                                <div class="upload_text-container">
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                    <div class="upload_text-counter">128</div>
+                                </div>
+                                <div class="upload_text-container">
+                                    <img src="img/Comment_16x16.png" alt="comment">
+                                    <div class="upload_text-counter">131</div>
+                                </div>
+                            </div>
+                            <div class="upload_text-section">
+                                <div class="upload_text-container">9-08-2016</div>
+                                <div class="upload_text-container">
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                    <div class="upload_text-counter">67</div>
+                                </div>
+                                <div class="upload_text-container">
+                                    <img src="img/Comment_16x16.png" alt="comment">
+                                    <div class="upload_text-counter">22</div>
+                                </div>
+                            </div>
+                            <div class="upload_data">Image upload: 11-04-2016 </div>
+                        </div>
+                    </div>
+                    <div class="upload_img">
+                        <div class="img_box"><img src="img/img_6.png" alt="uploaded image"></div>
+                        <div class="upload_text">
+                            <div class="upload_text-section">
+                                <div class="upload_text-container">Today</div>
+                                <div class="upload_text-container">
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                    <div class="upload_text-counter">128</div>
+                                </div>
+                                <div class="upload_text-container">
+                                    <img src="img/Comment_16x16.png" alt="comment">
+                                    <div class="upload_text-counter">131</div>
+                                </div>
+                            </div>
+                            <div class="upload_text-section">
+                                <div class="upload_text-container">9-08-2016</div>
+                                <div class="upload_text-container">
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                    <div class="upload_text-counter">67</div>
+                                </div>
+                                <div class="upload_text-container">
+                                    <img src="img/Comment_16x16.png" alt="comment">
+                                    <div class="upload_text-counter">22</div>
+                                </div>
+                            </div>
+                            <div class="upload_data">Image upload: 11-04-2016 </div>
+                        </div>
+                    </div>
+                    <div class="upload_img">
+                        <div class="img_box"><img src="img/img_7.png" alt="uploaded image"></div>
+                        <div class="upload_text">
+                            <div class="upload_text-section">
+                                <div class="upload_text-container">Today</div>
+                                <div class="upload_text-container">
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                    <div class="upload_text-counter">128</div>
+                                </div>
+                                <div class="upload_text-container">
+                                    <img src="img/Comment_16x16.png" alt="comment">
+                                    <div class="upload_text-counter">131</div>
+                                </div>
+                            </div>
+                            <div class="upload_text-section">
+                                <div class="upload_text-container">9-08-2016</div>
+                                <div class="upload_text-container">
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                    <div class="upload_text-counter">67</div>
+                                </div>
+                                <div class="upload_text-container">
+                                    <img src="img/Comment_16x16.png" alt="comment">
+                                    <div class="upload_text-counter">22</div>
+                                </div>
+                            </div>
+                            <div class="upload_data">Image upload: 11-04-2016 </div>
+                        </div>
+                    </div>
+                    <div class="upload_img">
+                        <div class="img_box"><img src="img/img_8.png" alt="uploaded image"></div>
+                        <div class="upload_text">
+                            <div class="upload_text-section">
+                                <div class="upload_text-container">Today</div>
+                                <div class="upload_text-container">
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                    <div class="upload_text-counter">128</div>
+                                </div>
+                                <div class="upload_text-container">
+                                    <img src="img/Comment_16x16.png" alt="comment">
+                                    <div class="upload_text-counter">131</div>
+                                </div>
+                            </div>
+                            <div class="upload_text-section">
+                                <div class="upload_text-container">9-08-2016</div>
+                                <div class="upload_text-container">
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                    <div class="upload_text-counter">67</div>
+                                </div>
+                                <div class="upload_text-container">
+                                    <img src="img/Comment_16x16.png" alt="comment">
+                                    <div class="upload_text-counter">22</div>
+                                </div>
+                            </div>
+                            <div class="upload_data">Image upload: 11-04-2016 </div>
+                        </div>
+                    </div>
+                    <div class="upload_img">
+                        <div class="img_box"><img src="img/img_9.png" alt="uploaded image"></div>
+                        <div class="upload_text">
+                            <div class="upload_text-section">
+                                <div class="upload_text-container">Today</div>
+                                <div class="upload_text-container">
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                    <div class="upload_text-counter">128</div>
+                                </div>
+                                <div class="upload_text-container">
+                                    <img src="img/Comment_16x16.png" alt="comment">
+                                    <div class="upload_text-counter">131</div>
+                                </div>
+                            </div>
+                            <div class="upload_text-section">
+                                <div class="upload_text-container">9-08-2016</div>
+                                <div class="upload_text-container">
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                    <div class="upload_text-counter">67</div>
+                                </div>
+                                <div class="upload_text-container">
+                                    <img src="img/Comment_16x16.png" alt="comment">
+                                    <div class="upload_text-counter">22</div>
+                                </div>
+                            </div>
+                            <div class="upload_data">Image upload: 11-04-2016 </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="load_more_btn">LOAD MORE</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
